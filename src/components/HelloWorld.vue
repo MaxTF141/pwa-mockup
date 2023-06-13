@@ -1,7 +1,7 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    <video src="../assets/VID-20230612-WA0007.mp4"></video>
+    <video id="fullscreen-video" src="../assets/VID-20230612-WA0007.mp4" autoplay type="video/mp4" ></video>
   </div>
 </template>
 
@@ -30,4 +30,11 @@ li {
 a {
   color: #42b983;
 }
+
+#fullscreen-video {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
 </style>
