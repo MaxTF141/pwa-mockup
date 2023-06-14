@@ -24,7 +24,7 @@ module.exports = {
           type: 'image/png',
         },
       ],
-      name: '', // Add or update this line to set the name to an empty string
+      name: 'Spot', // Add or update this line to set the name to an empty string
     },
   },
 };
