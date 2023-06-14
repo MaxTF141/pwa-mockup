@@ -1,35 +1,30 @@
-const { defineConfig } = require('@vue/cli-service');
-
-module.exports = defineConfig({
-  transpileDependencies: true,
+module.exports = {
   pwa: {
     name: 'Spotify',
     themeColor: '#1db954',
-    msTileColor: '#ffffff',
+    msTileColor: '#000000',
     appleMobileWebAppCapable: 'yes',
-    appleMobileWebAppStatusBarStyle: 'default',
+    appleMobileWebAppStatusBarStyle: 'black',
     workboxOptions: {
-      exclude: [/\.map$/, /_redirects/],
+      // Configure options for the service worker
+    },
+    iconPaths: {
+      favicon32: './src/assets/icon3@2x.png',
+      favicon16: './src/assets/icon3@2x.png',
+      appleTouchIcon: './src/assets/icon3@2x.png',
+      maskIcon: './src/assets/icon3@2x.png',
+      msTileImage: './src/assets/icon3@2x.png',
     },
     manifestOptions: {
+      background_color: '##191414',
       icons: [
-        {
-          src: './src/assets/logos_spotify-crop-removebg-preview.png',
-          sizes: '192x192',
-          type: 'image/png',
-        },
         {
           src: './src/assets/logos_spotify-crop-removebg-preview.png',
           sizes: '512x512',
           type: 'image/png',
         },
       ],
-      start_url: '.',
-      display: 'standalone',
-      background_color: '#191414',
-      splash_pages: {
-        manifest: './img/splash/manifest_splash.json',
-      },
+      name: '', // Add or update this line to set the name to an empty string
     },
   },
-});
+};
