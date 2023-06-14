@@ -1,7 +1,6 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
-    <video id="fullscreen-video" src="../assets/VID-20230612-WA0007.mp4" autoplay type="video/mp4" ></video>
+    <video id="fullscreen-video" src="../assets/VID-20230612-WA0007.mp4" autoplay type="video/mp4"></video>
   </div>
 </template>
 
@@ -9,7 +8,6 @@
 export default {
   name: 'HelloWorld',
   props: {
-    msg: String
   }
 }
 </script>
